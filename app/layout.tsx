@@ -21,7 +21,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    images: [{ url: "https://abdrahmen.tn/qr-code-generator.png" }],
+    url: "https://qr-code-style.vercel.app",
+    images: [{ url: "https://qr-code-style.vercel.app/qr-code-style.png" }],
     title: "Professional QR Code Generator",
     description: "The most customizable QR code generator with real-time preview and premium styling options.",
     siteName: "QR Signal Generator",
@@ -30,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Professional QR Code Generator",
     description: "Create stunning, high-quality custom QR codes in real-time. Developed by Amri AbdRahmen.",
-    creator: "@abdrahmen_amri", // Assuming a handle, but focusing on the name provided
+    creator: "@AbdRahmen_", // Assuming a handle, but focusing on the name provided
   },
   robots: {
     index: true,
