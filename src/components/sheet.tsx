@@ -1,12 +1,12 @@
 "use client";
 import { useCallback, useState } from "react";
-import { Sheet, SheetTrigger, SheetContent, SheetHeader, SheetTitle, SheetDescription } from "./ui/sheet";
+import { Sheet, SheetTrigger, SheetContent, SheetHeader, SheetTitle, SheetDescription, SheetClose } from "./ui/sheet";
 import { Button } from "./ui/button";
 import QRForm from "../form/qr.form";
 import QRCodeStyling, { DrawType, FileExtension, Options } from "qr-code-styling";
 import { QRCodeMode } from "../type/enum";
 import { ScrollArea } from "./ui/scroll-area";
-import { QrCode } from "lucide-react";
+import { QrCode, XIcon } from "lucide-react";
 import QrPreview from "./qr-preview";
 import { QrFormData } from "../schema/qr.schema";
 
@@ -136,6 +136,9 @@ export default function QrSheet() {
                         <SheetDescription className="text-xs sm:text-sm">
                             Style your QR code and download it when ready.
                         </SheetDescription>
+                        <SheetClose asChild>
+                            <XIcon className="absolute top-4 right-4 w-8 h-8 hover:opacity-80 text-red-600" />
+                        </SheetClose>
                     </SheetHeader>
                     
                     {isOpen && (
