@@ -67,7 +67,7 @@ export default function QRForm({ onSubmit, onDownload }: Props) {
 
   return (
     <Form {...form}>
-      <form className="space-y-4 p-4 pb-10">
+      <form className="space-y-4 p-4 pb-10" onSubmit={form.handleSubmit(onSubmit)}>
         <QrMode methods={form as UseFormReturn<QrFormData>} />
         <QrGlobal methods={form as UseFormReturn<QrFormData>} />
         <QrImage methods={form as UseFormReturn<QrFormData>} />
